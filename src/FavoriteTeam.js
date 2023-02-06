@@ -1,7 +1,7 @@
-function FavoriteTeam() {
+function FavoriteTeam({ type }) {
   return (
     <div>
-      Ohio State!
+      {type}
     </div>
   )
 }

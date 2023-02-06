@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import FavoriteTeam from './FavoriteTeam';
 
 function getRandomTeam() {
   const teams = ['ohio-state', 'michigan', 'csu', 'pitt', 'buffalo', 'ny'];
@@ -8,15 +9,19 @@ function getRandomTeam() {
 function App() {
   const [team, setTeam] = useState([]);
 
-  // Cannot use teams.push() because it will modify exisiting state which we don't want to do
   const onButtonClick = () => {
-    setTeam([...team, getRandomTeam()] );
+    setTeam([...team, getRandomTeam()]);
   }
+
+  const renderedTeams = team.map((team, index) => {
+    //Mapping component to use when showing a list of items to user (very important!)
+    return <FavoriteTeam type={team} key={index} />
+  });
 
   return (
     <div>
       <button onClick={onButtonClick}>Add college team</button>
-      <div>{team}</div>
+      <div>{renderedTeams}</div>
     </div>
   )
 }
