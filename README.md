@@ -2,6 +2,11 @@
 
 ---
 ## Built using React
+` Instructions `
+
+` Click on each university div container to watch the heart grow `
+
+` Key learnings: event handlers, state, and lists `
 
 ---
 ### Showcases Understanding Of

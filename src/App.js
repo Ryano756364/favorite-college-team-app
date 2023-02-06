@@ -1,8 +1,9 @@
 import {useState} from 'react';
 import FavoriteTeam from './FavoriteTeam';
+import './App.css';
 
 function getRandomTeam() {
-  const teams = ['ohio-state', 'michigan', 'csu', 'pitt', 'buffalo', 'ny'];
+  const teams = ['osu', 'michigan', 'csu', 'pitt', 'buffalo', 'rochester-ny', 'ou'];
   return teams[Math.floor(Math.random() * teams.length)];
 }
 
@@ -14,14 +15,13 @@ function App() {
   }
 
   const renderedTeams = team.map((team, index) => {
-    //Mapping component to use when showing a list of items to user (very important!)
     return <FavoriteTeam type={team} key={index} />
   });
 
   return (
-    <div>
+    <div className='main-container'>
       <button onClick={onButtonClick}>Add college team</button>
-      <div>{renderedTeams}</div>
+      <div className='team-container'>{renderedTeams}</div>
     </div>
   )
 }

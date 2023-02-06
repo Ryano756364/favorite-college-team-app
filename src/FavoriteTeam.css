@@ -1,0 +1,19 @@
+.team-container{
+  cursor: pointer;
+  position: relative;
+  border: .1rem solid black;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin: 1rem;
+  box-shadow: 0 .3rem .4rem lightgray;
+}
+
+.team-logo{
+  height: 20rem;
+}
+
+.heart-icon{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}

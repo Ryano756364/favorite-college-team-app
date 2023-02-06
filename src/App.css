@@ -1,0 +1,27 @@
+html {
+  background-color: #eee;
+  font-size: 62.5%;  /* 10px setup strategy for global font*/
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: rgb(211, 99, 99);
+  border: .1rem solid black;
+  box-shadow: .5rem 1rem 1.8rem black;
+  border-radius: 3px;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.team-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
