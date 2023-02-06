@@ -16,3 +16,7 @@
 ` Event System & State System `
 
 ` Whenever a value is changed - updating content on screen (rerendering) `
+
+` Updating state is only done through the setter function `
+
+` Array destructuring may have been the chosen way to handle state because you can have multiple states on the same element `
